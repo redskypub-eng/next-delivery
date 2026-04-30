@@ -231,7 +231,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   if (!user) { 
     return { 
         redirect: {
-            destination: `/${tenant.slug}/login`, 
+            destination: `/${(tenant as any).slug}/login`, 
             permanent: false
         }
     }
