@@ -12,7 +12,6 @@ import { Tenant } from '../../types/Tenant';
 import { getCookie } from 'cookies-next';
 import { User } from '../../types/User';
 import { useAuthContext } from '../../contexts/auth';
-import NoItemsIcon from '../../public/assets/noitems.svg';
 
 const Home = (data: Props) => {
   const { setToken, setUser } = useAuthContext();
