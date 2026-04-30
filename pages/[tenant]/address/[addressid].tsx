@@ -21,7 +21,7 @@ const EditAddress = (data: Props) => {
   const { tenant, setTenant, setShippingAddress, setShippingPrice } = useAppContext();
   const useFormatter = formatter();
   const router = useRouter();
-  const api = frontApi(data.(tenant as any).slug);
+  const api = frontApi((data.tenant as any).slug);
 
   const [errorFields, setErrorFields] = useState<string[]>([])
 
