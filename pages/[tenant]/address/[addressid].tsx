@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+(tenant as any).slugimport { GetServerSideProps } from 'next';
 import { useEffect, useState } from 'react';
 import { useAppContext } from '../../../contexts/app';
 import { frontApi } from '../../../libs/frontApi';
@@ -21,7 +21,7 @@ const EditAddress = (data: Props) => {
   const { tenant, setTenant, setShippingAddress, setShippingPrice } = useAppContext();
   const useFormatter = formatter();
   const router = useRouter();
-  const api = frontApi(data.tenant.slug);
+  const api = frontApi(data.(tenant as any).slug);
 
   const [errorFields, setErrorFields] = useState<string[]>([])
 
