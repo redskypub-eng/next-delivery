@@ -1,4 +1,4 @@
-(tenant as any).slugimport { GetServerSideProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { useEffect, useState } from 'react';
 import { useAppContext } from '../../../contexts/app';
 import { frontApi } from '../../../libs/frontApi';
